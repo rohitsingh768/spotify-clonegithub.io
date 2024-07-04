@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+.main
+{
+    display: flex;
+    height: 100vh;
+}
+.sidebar
+{
+    background-color: black;
+    width: 350px;
+    border-radius: 1rem; /*16px*/
+    padding: 6px 6px;
+}
+
+.main-content
+{
+    background-color: black;
+    flex: 1;
+    border-radius: 1rem;
+    overflow-y: scroll;
+    position: static;
+    top:0;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player
+{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+}
+
+.nav
+{
+    background-color: hsl(0, 0%, 7%);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    opacity: 0.7;
+}
+
+.nav-option
+{
+    line-height: 2.5rem;
+    opacity: 0.5;
+    padding: 0.7rem;
+}
+
+.nav-option:hover
+{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+a{
+    font-size: 1.25rem;
+    margin: 1.25rem;
+}
+
+.library
+{
+    height: 40px;
+    background-color: #121212;
+    border-radius: 1rem;
+    padding:0 23px;
+    margin-top: 5px;
+}
+
+.library .lib-option
+{
+    padding-top: 6px;
+    opacity: 0.7;
+}
+
+.library .option
+{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.lib-option:hover{
+    opacity: 2;
+}
+
+.icons
+{
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    margin-top: 7px;
+     opacity: 0.7;
+}
+
+.icons:hover
+{
+    opacity: 2;
+}
+
+.icons i{
+    margin-right: 1rem;
+}
+
+/* lib box */
+.lib-box
+{
+    width: 310px;
+    margin-top: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.box
+{
+    height: 7rem;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    background-color: #232323;
+}
+
+.box-p1
+{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.box-p1:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.box-p2
+{
+    font-size: 0.85rem;
+    opacity: 0.9 ;
+    margin-top: 15px;
+}
+.box-p2:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.badge
+{
+    border-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    margin-top: 10px;
+    width: fit-content;
+}
+.badge:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.box1
+{
+    height: 8rem;
+    margin: 0.5rem 0 0.5rem 0;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    background-color: #232323;
+}
+
+.box-p1
+{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.box-p2
+{
+    font-size: 0.85rem;
+    opacity: 0.9 ;
+    margin-top: 10px;
+}
+
+.badge
+{
+    border-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height: 2rem;
+    margin-top: 10px;
+    width: fit-content;
+}
+
+/* main create */
+
+.sticky-nav
+{
+    height: 60px;
+    width: 1050px;
+    background-color: #232323;
+    display: flex;
+    position: sticky;
+    top: 0 ;
+    border-radius: 40px;
+
+}
+
+.sticky-nav i
+{
+ font-size: 1.5rem;
+ margin-top: 20px;
+}
+.sticky-nav i:hover
+{
+    opacity: 0.7;
+    background-color: #232323;
+    cursor: pointer;
+}
+
+.sticky-nav .nav-arrow1 i{
+    margin-left: 20px;
+}
+
+.sticky-nav .nav-arrow2 i{
+    margin-left: 20px;
+}
+
+.sticky-nav .badge1
+{
+    height: 30px;
+    width: 170px;
+    border: none;
+    font-weight: bold;
+    border-radius: 100px;
+    margin-left: 600px;
+    background-color: white;
+    color: black;
+    margin-top: 15px;
+    text-align: center;
+}
+.sticky-nav .badge1:hover
+{
+    opacity: 0.5;
+    background-color: rgba(143, 137, 133, 0.9);
+    cursor: pointer;
+}
+
+.sticky-nav .badge2
+{
+    height: 30px;
+    border: none;
+    width: 190px;
+    border-radius: 100px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+}
+.sticky-nav .badge2:hover
+{
+    opacity: 0.9;
+    background-color: rgba(237, 235, 231, 0.9);
+    cursor: pointer;
+}
+
+
+
+.sticky-nav .nav-person
+{
+    margin-left: 15px;
+}
+.sticky-nav .nav-person:hover{
+    opacity: 0.7;
+    background-color: #232323;
+    cursor: pointer;
+}
+
+@media (max-width: 600px)
+{
+    .hide
+    {
+        display: none;
+    }
+}
+
+/* .cards{
+ margin-top: 10px;
+} */
+
+.cards-container .card
+{
+    background-color: #232323;
+    width: 210px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+   
+}
+
+.cards-container .card:hover
+{
+    background-color: #232323;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.card
+{
+    border-radius: 1rem;
+}
+
+.cards-container
+{
+    display: flex;
+    margin-top: 8px;
+}
+
+.card-title
+{
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.card-info
+{
+    margin-top: 7px;
+    font-weight: 200;
+    font-size: 0.85rem;
+}
+
+h2
+{
+    margin-top: 15px;
+}
+.cards-container1
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.card{
+    background-color: #232323;
+    border-radius: 0.5rem;
+    width: 210px;
+    padding: 1rem;
+}
+
+.card-title
+{
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.card-info
+{
+    margin-top: 7px;
+    font-weight: 200;
+    font-size: 0.85rem;
+}
+
+.cards-container-a:hover
+{
+    background-color: #232323;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.cards-container-b
+{
+    margin-left: 25px;
+}
+.cards-container-b:hover
+{
+    background-color: #232323;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.cards-container-c
+{
+    margin-left: 25px;
+}
+.cards-container-c:hover
+{
+    background-color: #232323;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.cards-container-d
+{
+    margin-left: 25px;
+}
+.cards-container-d:hover
+{
+    background-color: #232323;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* card-container2 */
+
+
+.cards-container2
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+/* card-container3 */
+.cards-container3
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+/* card-container4 */
+.cards-container4
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+/* card-container5 */
+.cards-container5
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+/* card-container6 */
+.cards-container6
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+/* .blank
+{
+    height: 80px;
+} */
+
+.footer
+{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line
+{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.music-player .album
+{
+    height: 60px;
+    width: 25%;
+    background-color: #232323;
+    display: flex;
+    padding: 5px;
+}
+
+.music-player .tool{
+    height: 60px;
+    width: 50%;
+    background-color: #232323;
+}
+
+.music-player .controls
+{
+    height: 60px;
+    width: 25%;
+    background-color: #232323;
+}
+
+.album .music-img
+{
+    margin-left: 5px;
+}
+
+.album .text
+{
+    margin-left: 20px;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.album .text1
+{
+    font-weight: bold;
+}
+.album .text:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.album .text1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.album .icon1
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.album .icon1:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-heart
+{
+    font-size: 22;
+}
+.album .icon2
+{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.album .icon2:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-keyboard
+{
+    font-size: 22;
+}
+
+/*.controls  */
+.music-player .controls
+{
+    display: flex;
+}
+
+.music-player .controls .icons1
+{
+    margin-left: 15px;
+    margin-top: 23px;
+
+}
+.music-player .controls .icons1:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-playstation
+{
+    font-size: 22;
+}
+
+.music-player .controls .icons2
+{
+    margin-left: 15px;
+    margin-top: 23px;
+}
+.music-player .controls .icons2:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-rotate-right
+{
+    font-size: 22;
+}
+.music-player .controls .icons3
+{
+    margin-left: 15px;
+    margin-top: 23px;
+
+}
+.music-player .controls .icons3:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-sliders
+{
+    font-size: 22;
+}
+
+.music-player .controls .icons4
+{
+    margin-left: 15px;
+    margin-top: 23px;
+
+}
+.music-player .controls .icons4:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-compress
+{
+    font-size: 22;
+}
+
+.music-player .controls .icons5
+{
+    margin-left: 15px;
+    margin-top: 23px;
+}
+.music-player .controls .icons5:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-volume-low
+{
+    font-size: 22;
+}
+
+.icons6
+{
+    margin-top: 26px;
+    margin-left: 8px;
+}
+
+/* tool */
+.tools1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-shuffle
+{
+    font-size: 23;
+}
+
+.player-controls-1
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.player-controls-1:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.player-controls-2
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.player-controls-2:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.fa-backward-step
+{
+    font-size: 23;
+}
+.player-controls-3
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.player-controls-3:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa-circle-play
+{
+    font-size: 23;
+}
+.player-controls-4
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.player-controls-4:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa-forward-step
+{
+    font-size: 23;
+}
+
+.player-controls-5
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.player-controls-5:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.fa-forward-step
+{
+    font-size: 23;
+}
+.playback-bar
+{
+    display: flex;
+    margin-top: 5px;
+     text-align: center; 
+    justify-content: center;
+} 
+
+.curr-time:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.total-time:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
